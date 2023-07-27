@@ -2,9 +2,10 @@ IN TERMINAL:
 
 1. 
     npm install mongodb
-    node display_BASIC.js
+2.
+   node display_BASIC.js
 
-2. Run other files...
+3. Run other files...
     node [filename].js
 
 NOTE:
