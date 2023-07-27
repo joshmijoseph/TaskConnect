@@ -5,9 +5,7 @@ IN TERMINAL:
 2.
    node display_BASIC.js
 
-3. To run other files...
-   
-    node [filename].js
+(i.e., node [filename].js)
 
 NOTE:
 1. Node.js application is running locally on your computer - we need to change to code to run on HEROKU
