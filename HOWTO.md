@@ -1,4 +1,3 @@
-======================================================================
 !!!START HERE TO RUN FILE:
 1. 
     npm install mongodb
@@ -7,7 +6,6 @@
 2. Run other files...
     node [filename].js
 
-======================================================================
 NOTE:
 1. Node.js application is running locally on your computer - we need to change to code to run on HEROKU
 2. the "node_modules" folder, "package-lock.json", and "package.json" files/folders will all generate when npm install mongodb. Ignore them.
