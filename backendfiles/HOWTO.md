@@ -18,7 +18,7 @@ REFERENCES:
 
     !!!c. https://stackoverflow.com/questions/47370487/node-js-mongodb-driver-async-await-queries
 
-    d. Extra Refs (sorta useful): Connect to MongoDB instance (e.g., our database)
+    d. (sorta useful): Connect to MongoDB instance (e.g., our database)
     https://mongodb.github.io/node-mongodb-native/3.0/tutorials/connect/#:~:text=Connect%20to%20a%20Single%20MongoDB%20Instance&text=const%20MongoClient%20%3D%20require('mongodb,connect%20to%20the%20server%20MongoClient.
 
 
