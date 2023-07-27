@@ -9,3 +9,6 @@ https://www.figma.com/file/RZyyNFR406ny7DqMyqAsPg/TaskConnect?type=whiteboard&no
 
 URL to MongoDB for TaskConnect:
 https://cloud.mongodb.com/v2/64befad83fa23b059c487676#/clusters
+
+----MONGODB and NODEJS-----
+1. Read HOWTO.md
