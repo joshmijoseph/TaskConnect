@@ -3,7 +3,7 @@ IN TERMINAL:
 1. 
     npm install mongodb
 2.
-   node display_BASIC.js (i.e., node [filename].js)
+   node display_BASIC.js
 
 NOTE:
 1. Node.js application is running locally on your computer - we need to change to code to run on HEROKU
