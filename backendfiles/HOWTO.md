@@ -5,7 +5,8 @@ IN TERMINAL:
 2.
    node display_BASIC.js
 
-3. Run other files...
+3. To run other files...
+   
     node [filename].js
 
 NOTE:
