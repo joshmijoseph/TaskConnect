@@ -11,12 +11,26 @@
         });
      </script>
     <style>
+    .container {
+        margin-top: 3px; /*add the small margin at top*/
+        background-color:#2E4272;
+        display: flex;
+        height: 100vh; /*spans 100% of vert. viewport*/
+        padding: 0px;
+    }
+    .middle-col {
+        background-color:#ffffff;
+        flex-grow: 1;
+    }
+
     </style>
 </head>
 <body>
     <header id = "header"></header>
-    <h1>settings page</h1>
-    <script>
-    </script>
+    <div class="container">
+        <div class="middle-col">
+            <h1>settings page</h1>
+        </div>
+    </div>
 </body>
 </html>
