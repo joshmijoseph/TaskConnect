@@ -10,6 +10,7 @@
            $("#header").load("Header.html");
         });
      </script>
+    <link href="toggleswitch.css" rel="stylesheet">
     <style>
     .container {
         margin-top: 3px; /*add the small margin at top*/
@@ -57,7 +58,12 @@
                 <div>
                     <h2>Share Activity</h2>
                     <label for="shareToggle">Share Activity</label>
-                    <input type="checkbox" id="shareToggle">
+                    <!-- <input type="checkbox" id="shareToggle"> -->
+                    <!-- Rounded switch -->
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
                     <div>Share personal tasks with friends</div>
                 </div>
             </div>
