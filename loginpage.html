@@ -60,6 +60,7 @@
             display: flex;
             flex-direction: column; /*waant the form inputs disp. vert.*/
             align-items: flex-start;
+            flex: 1;
         }   
         .login-input {
             padding: 10px 150px;
@@ -67,11 +68,19 @@
             border: 1px solid #ccc;
         }
         .right-image {
-            top: 100;
-            right: 0;
+            top: 100px;
+            right: 0px;
             height: 40vh;
             padding: 100px;
         }
+        .links {
+            white-space: nowrap; /* Prevent line breaks */
+          }
+          
+          .links a {
+            margin-right: 200px; /* Adjust this value to increase/decrease the space */
+          }
+          
         @media (max-width: 768px) {
             /*hide these elements*/
             .hide-on-small-screen {
@@ -99,10 +108,13 @@
                     <input type="text" class="login-input" placeholder="Password" required>
                     <input type="submit" class="button" value="Login">
                 </form>
-                <p><a href="#">Forgot Password?</a> <a href="#">Sign Up</a></p>
+                <p class="links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="signuppage.html">Sign Up</a>
+                </p>
             </div>
         </div>
-        <img src="/Images/loginimage.png" alt="Image" class="right-image">
+        <img src="/Users/Joshmi/Downloads/Tufts/Summer Session/CS 120/TaskConnect/TaskConnect/Images/loginimage.png" alt="Image" class="right-image">
     </div>
 </body>
 </html>

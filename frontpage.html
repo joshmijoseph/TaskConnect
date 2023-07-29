@@ -6,11 +6,11 @@
     <style>
         body {
             margin: 0;
-            background-color: #2B3A45; /* Set background color for body */
+            background-color: #5B9F3C;/* Set background color for body */
         }
         nav {
             display: flex;
-            background-color: #ffffff;
+            background-color: #5B9F3C;
             align-items: center; /*vert align*/
             justify-content: flex-end; /*makes nav ele. right aligned*/
             white-space: nowrap; 
@@ -21,26 +21,26 @@
         }
         a { 
             text-decoration: none;
-            color: #000000; 
+            color: #ffffff; 
         }
         .logo {
             padding-left: 20px;
             margin-right: auto; /*make logo left aligned*/
         }
         div {
-            color: #000000;
+            color: #ffffff;
             padding: 10px;
         }
         .container {
             margin-top: 3px; /*add the small margin at top*/
-            background-color:#2E4272;
+            background-image: linear-gradient(180deg, #5B9F3C, #A7CE95); /*gradient background*/
             display: flex;
             height: 100vh; /*spans 100% of vert. viewport*/
             padding: 0px;
-        }
-        .middle-col {
-            background-color:#ffffff;
-            flex-grow: 1;
+            font-size: 30px;
+            justify-content: center; 
+            align-items: center;
+            overflow: hidden; /* Prevent scrolling */
         }
         .button {
             background-color: #ff0000;
@@ -55,6 +55,12 @@
             color: #ffffff;
             padding: 5px;
             border-radius: 5px;
+        }
+        .right-image {
+            top: 100px;
+            right: 0px;
+            height: 75vh;
+            padding: 10px;
         }
         @media (max-width: 600px) {
             /*hide these elements*/
@@ -74,19 +80,18 @@
 
             <ul>
                 <li class="hide-on-small-screen"><a href="#">About Us</a></li>
-                <li><a href="#"  class="navbutton">Sign In</a></li>
+                <li><a href="loginpage.html"  class="navbutton">Log In</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
-        <div class="middle-col">
-            <div margin-top: 20px>
-                <h2>Get the perfect </h2>
-                <h2>schedule with </h2>
-                <h2>TaskConnect!</h2>
-                <a href="#" class="button">Sign Up</a>
-            </div>
+        <div margin-top: 20px>
+            <h2>Get the perfect </h2>
+            <h2>schedule with </h2>
+            <h2>TaskConnect!</h2>
+            <a href="signuppage.html" class="button">Sign Up</a>
         </div>
+        <img src="/Users/Joshmi/Downloads/Tufts/Summer Session/CS 120/TaskConnect/TaskConnect/Images/frontpage.png" alt="Image" class="right-image">
     </div>
 </body>
 </html>
