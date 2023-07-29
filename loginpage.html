@@ -6,11 +6,11 @@
     <style>
         body {
             margin: 0;
-            background-color: #2B3A45; /* Set background color for body */
+            background-color: #E0A1AC;/* Set background color for body */
         }
         nav {
             display: flex;
-            background-color: #ffffff;
+            background-color: transparent;
             align-items: center; /*vert align*/
             justify-content: flex-end; /*makes nav ele. right aligned*/
             white-space: nowrap; 
@@ -21,27 +21,30 @@
         }
         a { 
             text-decoration: none;
-            color: #000000; 
+            color: #ffffff; 
         }
         .logo {
             padding-left: 20px;
             margin-right: auto; /*make logo left aligned*/
         }
         div {
-            color: #000000;
+            color: #ffffff;
             padding: 10px;
         }
         .container {
             margin-top: 3px; /*add the small margin at top*/
-            background-color:#ffffff;
+            background-image: linear-gradient(180deg, #E0A1AC, #FFCC15); /*gradient background*/
             display: flex;
             height: 100vh; /*spans 100% of vert. viewport*/
             padding: 0px;
+            justify-content: center; 
+            align-items: center;
+            overflow: hidden; /* Prevent scrolling */
         }
         .button {
             background-color: #ff0000;
             color: #ffffff;
-            padding: 10px 20px;
+            padding: 10px 200px;
             font-size: 18px;
             border-radius: 5px;
             border: none;
@@ -59,11 +62,17 @@
             align-items: flex-start;
         }   
         .login-input {
-            padding: 10px;
+            padding: 10px 150px;
             margin-bottom: 10px; /*adds space b/w form inputs*/
             border: 1px solid #ccc;
         }
-        @media (max-width: 600px) {
+        .right-image {
+            top: 100;
+            right: 0;
+            height: 40vh;
+            padding: 100px;
+        }
+        @media (max-width: 768px) {
             /*hide these elements*/
             .hide-on-small-screen {
                 display: none;
@@ -90,9 +99,10 @@
                     <input type="text" class="login-input" placeholder="Password" required>
                     <input type="submit" class="button" value="Login">
                 </form>
-                <p1><a href="#">Forgot Password?</a> <a href="#">Sign Up</a></p1>
+                <p><a href="#">Forgot Password?</a> <a href="#">Sign Up</a></p>
             </div>
         </div>
+        <img src="/Images/loginimage.png" alt="Image" class="right-image">
     </div>
 </body>
 </html>
