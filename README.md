@@ -13,6 +13,9 @@ https://cloud.mongodb.com/v2/64befad83fa23b059c487676#/clusters
 ----MONGODB and NODEJS-----
 1. Go to the "backendfiles" folder
 2. Read HOWTO.md
+3. HEROKU, MONGODB, & NODEJS TUTORIAL:
+  
+   https://medium.com/make-school/how-to-deploy-your-node-js-mongodb-app-to-the-web-using-heroku-63d4bccf2675 
 
 ----Google Login API------
 1. Ref: https://www.youtube.com/watch?v=PctSxrQ3JrI
