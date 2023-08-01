@@ -1,7 +1,7 @@
 function initGoogleSignIn() {
     gapi.load('auth2', function() {
       gapi.auth2.init({
-        client_id: 434361129103-hkuonu5rhorgcv26dglqs902dnqlnkho.apps.googleusercontent.com,
+        client_id: '434361129103-hkuonu5rhorgcv26dglqs902dnqlnkho.apps.googleusercontent.com',
       });
     });
   }
@@ -15,4 +15,7 @@ function initGoogleSignIn() {
       console.log('Sign-in error:', error);
     });
   });
+  
+  // Initialize Google Sign-In when the page loads
+  document.addEventListener('DOMContentLoaded', initGoogleSignIn);
   
