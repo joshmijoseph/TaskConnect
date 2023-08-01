@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0;
-            background-color: #2B3A45; /* Set background color for body */
+            background-color: #5B9F3C; /* Set background color for body */
         }
         nav {
             display: flex;
@@ -34,7 +34,7 @@
         }
         .container {
             margin-top: 3px; /*add the small margin at top*/
-            background-color:#ffffff;
+            background-image: linear-gradient(180deg, #5B9F3C, #E1C14F);
             display: flex;
             height: 100vh; /*spans 100% of vert. viewport*/
             padding: 0px;
@@ -63,6 +63,12 @@
             padding: 10px;
             margin-bottom: 10px; /*adds space b/w form inputs*/
             border: 1px solid #ccc;
+        }
+        .right-image {
+            top: 100px;
+            right: 0px;
+            height: 75vh;
+            padding: 10px;
         }
         @media (max-width: 600px) {
             /*hide these elements*/
@@ -105,6 +111,7 @@
              data-shape="rectangular"
              data-logo_alignment="left">
         </div>
+        <img src="Images/signuppage.png" alt="Image" class="right-image">
     </div>
     <script>
         window.onload = function() {
