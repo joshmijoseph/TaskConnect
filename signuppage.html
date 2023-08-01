@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8"> 
     <title>TaskConnect - Sign Up Page</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="googleSignIn.js"></script>
     <style>
         body {
             margin: 0;
@@ -89,12 +91,10 @@
                     <input type="text" class="login-input" placeholder="Email" required>
                     <input type="text" class="login-input" placeholder="Password" required>
                     <input type="submit" class="button" value="Sign Up with Email">
-                    <button id="google-signin-btn">Sign in with Google</button>
                 </form>
             </div>
         </div>
+        <div id="google-signin-btn"></div>
     </div>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="googleSignIn.js"></script>
 </body>
 </html>

@@ -1,21 +1,18 @@
-function initGoogleSignIn() {
-    gapi.load('auth2', function() {
-      gapi.auth2.init({
-        client_id: '434361129103-hkuonu5rhorgcv26dglqs902dnqlnkho.apps.googleusercontent.com',
-      });
-    });
+function handleCredentialResponse(response) {
+    console.log("Encoded JWT ID token: " + response.credential);
+    // Handle the response as needed, e.g., send it to your server for verification.
   }
   
-  document.getElementById('google-signin-btn').addEventListener('click', function() {
-    const auth2 = gapi.auth2.getAuthInstance();
-    auth2.signIn().then(function(googleUser) {
-      // Handle the signed-in user here, e.g., send the user info to your server or display a welcome message.
-      console.log('Signed in as: ' + googleUser.getBasicProfile().getName());
-    }, function(error) {
-      console.log('Sign-in error:', error);
+  window.onload = function() {
+    google.accounts.id.initialize({
+      client_id: "434361129103-hkuonu5rhorgcv26dglqs902dnqlnkho.apps.googleusercontent.com",
+      callback: handleCredentialResponse,
     });
-  });
+    google.accounts.id.renderButton(
+      document.getElementById("buttonDiv"),
+      { theme: "outline", size: "large" } // customization attributes
+    );
+    google.accounts.id.prompt(); // also display the One Tap dialog
+  };
   
-  // Initialize Google Sign-In when the page loads
-  document.addEventListener('DOMContentLoaded', initGoogleSignIn);
   
