@@ -4,7 +4,6 @@
     <meta charset="utf-8"> 
     <title>TaskConnect - Sign Up Page</title>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="googleSignIn.js"></script>
     <style>
         body {
             margin: 0;
@@ -94,7 +93,18 @@
                 </form>
             </div>
         </div>
-        <div id="google-signin-btn"></div>
+        <!-- Google "Sign in with Google" button container -->
+        <div class="g_id_signin"
+             data-client_id="434361129103-hkuonu5rhorgcv26dglqs902dnqlnkho.apps.googleusercontent.com"
+             data-login_uri="https://your.domain/your_login_endpoint"
+             data-auto_prompt="false"
+             data-type="standard"
+             data-size="large"
+             data-theme="outline"
+             data-text="sign_in_with"
+             data-shape="rectangular"
+             data-logo_alignment="left">
+        </div>
     </div>
 </body>
 </html>
