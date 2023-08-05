@@ -1,3 +1,6 @@
+<?php
+    require_once('constant.php');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +9,7 @@
     <style>
         body {
             margin: 0;
-            background-color: #2B3A45;
+            /* background-color: #2B3A45; */
             /* Set background color for body */
         }
 
@@ -89,38 +92,9 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="logo iconContainer">
-            <li><a href="index.html">
-                <img class="icon" src="Images/logo.png" alt="company logo" />
-            </a></li>
-            <li><a href="#">Friends</a></li>
-            <li class="hide-on-small-screen"><a href="#">Challenges</a></li>
-        </ul>
-
-        <ul class="iconContainer">
-            <li class="hide-on-small-screen">
-                <a href="index.html">
-                    <img class="icon" src="Images/homeIcon.png" alt="Home Icon" />
-                </a>
-            </li>
-            <!-- <li class="hide-on-small-screen">
-                <a href="#">
-                    <img class="icon" src="Images/DoorbellIcon.png" alt="Notifications" />
-                </a>
-            </li> -->
-            <li class="hide-on-small-screen">
-                <a href="settings.html">
-                    <img class="settingIcon" src="Images/settingIcon.png" alt="Settings" />
-                </a>
-            </li>
-            <li>
-                <a href="profilepage.html">
-                    <img class="profileIcon" src="Images/profileIcon.png" alt="Profile" />
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <div>
+        <?php echo $constObj['currentTasks'];?>
+    </div>
 </body>
 
 </html>
