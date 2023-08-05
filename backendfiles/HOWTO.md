@@ -1,3 +1,8 @@
+DOWNLOAD:
+
+1. display_BASIC.js
+2. package.json
+
 IN TERMINAL:
 
 1. 
