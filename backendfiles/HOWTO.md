@@ -1,9 +1,16 @@
+DOWNLOAD:
+
+1. display_BASIC.js
+2. package.json
+
 IN TERMINAL:
 
 1. 
     npm install mongodb
 2.
    node display_BASIC.js
+
+3. Open: http://localhost:3000/
 
 NOTE:
 1. Node.js application is running locally on your computer - we need to change to code to run on HEROKU
