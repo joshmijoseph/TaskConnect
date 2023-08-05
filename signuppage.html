@@ -57,14 +57,15 @@
             padding: 5px;
             border-radius: 5px;
         }       
-        .login-form {
+        .signup-form {
             margin-top: 20px;
             display: flex;
-            flex-direction: column; /*want the form inputs disp. vert.*/
+            flex-direction: column; /*waant the form inputs disp. vert.*/
             align-items: flex-start;
+            flex: 1;
         }   
-        .login-input {
-            padding: 10px;
+        .signup-input {
+            padding: 10px 150px;
             margin-bottom: 10px; /*adds space b/w form inputs*/
             border: 1px solid #ccc;
         }
@@ -118,9 +119,9 @@
             <h2 class='title'style="margin-left: 5px;">Sign Up</h2>
             <div style="margin-left: 5px;">
                 <h1 class="title">Hello, Welcome!</h1>
-                <form class="login-form">
-                    <input type="text" class="login-input" placeholder="Email" required>
-                    <input type="text" class="login-input" placeholder="Password" required>
+                <form class="signup-form">
+                    <input type="text" class="signup-input" placeholder="Email" required>
+                    <input type="text" class="signup-input" placeholder="Password" required>
                     <input type="submit" class="button" value="Sign Up with Email">
                             <!-- Google "Sign in with Google" button container -->
                     <div class="g_id_signin"
