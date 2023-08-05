@@ -42,7 +42,7 @@ http.createServer(async function (req, res) {
 
       // Displaying the query results in the HTML response
       res.write("<h3>Query Results:</h3>");
-      //res.write("<pre>" + JSON.stringify(queryResult, null, 2) + "</pre>");
+      res.write("<pre>" + JSON.stringify(queryResult, null, 2) + "</pre>");
 
       res.end();
     } catch (err) {
