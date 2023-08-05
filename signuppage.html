@@ -60,7 +60,7 @@
         .login-form {
             margin-top: 20px;
             display: flex;
-            flex-direction: column; /*waant the form inputs disp. vert.*/
+            flex-direction: column; /*want the form inputs disp. vert.*/
             align-items: flex-start;
         }   
         .login-input {
@@ -86,7 +86,6 @@
             margin-right: auto;
             /*make logo left aligned*/
         }
-
         .icon {
             height: 35px;
             width: 35px;
@@ -150,12 +149,11 @@
                 document.querySelector(".g_id_signin"),
                 { theme: "outline", size: "large" } // customization attributes
             );
-            google.accounts.id.prompt(); // also display the One Tap dialog
+            google.accounts.id.prompt(); 
         };
 
         function handleCredentialResponse(response) {
             console.log("Encoded JWT ID token: " + response.credential);
-            // Handle the response as needed, e.g., send it to your server for verification.
         }
     </script>
 </body>
