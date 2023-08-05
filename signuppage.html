@@ -46,7 +46,7 @@
         .button {
             background-color: #ff0000;
             color: #ffffff;
-            padding: 10px 20px;
+            padding: 10px 150px;
             font-size: 18px;
             border-radius: 5px;
             border: none;
@@ -77,10 +77,18 @@
         }
         .g_id_signin {
             font-size: 16px;
-            color: #000000
+            color: #000000;
+            padding: 10px 150px;
         }
         .title {
             color: #ffffff
+        }
+        .links {
+            white-space: nowrap; /* Prevent line breaks */
+          }
+          
+        .links a {
+            margin-right: 200px; /* Adjust this value to increase/decrease the space */
         }
         .logo {
             padding-left: 20px;
@@ -135,7 +143,11 @@
                         data-shape="rectangular"
                         data-logo_alignment="left">
                     </div>
-                </form>
+                    </form>
+                    <p class="links">
+                        <a href="#">Already have an account?</a>
+                        <a href="loginpage.html">Log in</a>
+                    </p>
             </div>
         </div>
         <img src="Images/signuppage.png" alt="Image" class="right-image">
