@@ -1,0 +1,89 @@
+//THIS IS THE OUTPUT OF display_BASIC.js
+
+Hello World
+Success! This app is deployed online
+Query Results:
+[
+  {
+    "_id": "64befffec80a998f84f0f0fa",
+    "taskName": "Chemistry Homework",
+    "dueDate": "2023-07-24T04:00:00.000Z",
+    "priorityLevel": 0,
+    "taskStatus": false,
+    "isSubTask": false,
+    "description": "Complete all tasks for Chemistry",
+    "subtasks": [
+      {
+        "_id": "64bf0cd0dd66fb1ef38c7f8a",
+        "taskName": "Problem 3",
+        "dueDate": "2023-07-24T04:00:00.000Z",
+        "priorityLevel": 3,
+        "description": "This is Problem 3 of HW1 - subtask",
+        "isSubTask": true,
+        "taskStatus": true,
+        "subtasks": [
+          ""
+        ]
+      },
+      {
+        "_id": "64bf1a801c19e0e2c9f12fd6",
+        "taskName": "Clean Lab",
+        "dueDate": "2023-07-24T04:00:00.000Z",
+        "priorityLevel": 2,
+        "taskStatus": false,
+        "isSubTask": true,
+        "description": "Clean the Chem Lab in Room 203",
+        "subtasks": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "64bf1b7340ec8bbf60454c0d",
+    "taskName": "CS Homework",
+    "dueDate": "2023-07-24T04:00:00.000Z",
+    "priorityLevel": 0,
+    "taskStatus": false,
+    "isSubTask": false,
+    "description": "Need to complete for CS",
+    "subtasks": [
+      {
+        "_id": "64bf1c291c19e0e2c9f12fda",
+        "taskName": "Problem 2",
+        "dueDate": "2023-07-24T04:00:00.000Z",
+        "priorityLevel": 0,
+        "description": "Problem 2 for ML Assignment CS 5000",
+        "isSubTask": true,
+        "taskStatus": false,
+        "subtasks": [
+          ""
+        ]
+      },
+      {
+        "_id": "64bf1c1f1c19e0e2c9f12fd9",
+        "taskName": "Design HW",
+        "dueDate": "2023-07-24T04:00:00.000Z",
+        "priorityLevel": 2,
+        "taskStatus": false,
+        "isSubTask": true,
+        "description": "Create a web design for the UI/UX assignment",
+        "subtasks": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "64bf1c4840ec8bbf60454c0e",
+    "taskName": "Physics Homework",
+    "dueDate": "2023-07-24T04:00:00.000Z",
+    "priorityLevel": 1,
+    "taskStatus": false,
+    "isSubTask": false,
+    "description": "Need to complete for Physics",
+    "subtasks": [
+      ""
+    ]
+  }
+]
