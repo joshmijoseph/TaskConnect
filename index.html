@@ -6,6 +6,7 @@
     <script>
         $(function() {
            $("#header").load("Header.html");
+           $("#mainContent").load("currentTask.php");
         });
     </script>
     <title>TaskConnect</title>
@@ -34,8 +35,9 @@
             width: 200px;
         }
         .middle-col {
-            background-color:#ffffff;
+            background-color: #EAEAEA;
             flex-grow: 1;
+            padding: 20px;
         }
         .right-col {
             background-color:#D5D5D5;
@@ -54,9 +56,7 @@
         <header id = "header"></header>
         <div class="container">
             <div class="left-col"></div>
-            <div class="middle-col">
-                <div></div>
-            </div>
+            <div id = "mainContent" class="middle-col"></div>
             <div class="right-col">RIGHT COLUMN</div>
         </div>
     </div>
