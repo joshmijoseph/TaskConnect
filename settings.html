@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings Page</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
@@ -35,7 +36,66 @@
         display: inline-block; 
         border-radius: 5px;
     }
+    .currentEmail {
+        padding: 10px 50px;
+        margin-bottom: 10px; /*adds space b/w form inputs*/
+        border: 1px solid #ccc;
+    }
+    .currentPassword {
+        padding: 10px 50px;
+        margin-bottom: 10px; /*adds space b/w form inputs*/
+        border: 1px solid #ccc;
+    }
     </style>
+
+    <script>
+        $(function() {
+            $("#header").load("Header.html", function() {
+                const usernameContainer = document.getElementById('usernameContainer');
+                const currentUsernameBox = document.getElementById('currentUsernameBox');
+                const currentUsername = document.getElementById('currentUsername');
+                const editUsernameIcon = document.getElementById('editUsernameIcon');
+                const profileForm = document.getElementById('profileForm');
+                const newUsernameInput = document.getElementById('newUsername');
+                const updateUsernameButton = document.getElementById('updateUsername');
+
+                editUsernameIcon.addEventListener('click', () => {
+                currentUsernameBox.style.display = 'none';
+                profileForm.style.display = 'block';
+                });
+
+                updateUsernameButton.addEventListener('click', async () => {
+                const newUsername = newUsernameInput.value;
+                
+                if (!newUsername) {
+                    alert('Please enter a new username.');
+                    return;
+                }
+                
+                try {
+                    const response = await fetch('/updateUsername', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ newUsername })
+                    });
+
+                    if (response.ok) {
+                    currentUsername.textContent = newUsername;
+                    currentUsernameBox.style.display = 'block';
+                    profileForm.style.display = 'none';
+                    alert('Username updated successfully');
+                    } else {
+                    alert('Error updating username');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header id = "header"></header>
@@ -49,11 +109,17 @@
                 </div>
                 <div>
                     <h2>Change Email</h2>
-                    <a href="change_email.html" class="button">Change Email</a>
+                    <p>
+                        <input type="text" class="currentEmail" placeholder="johndoe@gmail.com" required>
+                        <a href="change_email.html" class="button">Change Email</a>
+                    </p>
                 </div>
                 <div>
                     <h2>Change Password</h2>
-                    <a href="change_password.html" class="button">Change My Password</a>
+                    <p>
+                        <input type="text" class="currentPassword" placeholder="johndoe%9876" required>
+                        <a href="change_password.html" class="button">Change Password</a>
+                    </p>
                 </div>
                 <div>
                     <h2>Log Out</h2>
