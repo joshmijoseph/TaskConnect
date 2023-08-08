@@ -1,7 +1,18 @@
-const express = require ("express");
-const { registerUser, authUser } = require("../controllers/userControllers");
+const express = require("express");
+const { updateUserEmail, updateUsername, updatePassword, registerUser } = require("../controllers/userControllers");
+const { protect } = require("../middleware/auth"); // Authentication middleware
 const router = express.Router();
 
-router.route('/profile').post(protect,updateUserProfile)
+// Update user's email
+router.route('/updateEmail').post(protect, updateUserEmail);
+
+// Update user's username
+router.route('/updateUsername').post(protect, updateUsername);
+
+// Update user's password
+router.route('/updatePassword').post(protect, updatePassword);
+
+// Register a new user
+router.route('/register').post(registerUser);
 
 module.exports = router;
